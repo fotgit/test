@@ -3,9 +3,175 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Example Portfolio</title>
+    <title>Sample</title>
+    <link rel="stylesheet" href="./css/destyle.css" type="text/css" />
+    <link rel="stylesheet" href="./css/sample.css" type="text/css" />
   </head>
   <body>
-    <h1>Hello GitHub.io !</h1>
+    <header>
+      <div class="header-area">
+        <div class="header-area-left">
+          <div class="header-content"><p>Sample</p></div>
+        </div>
+        <div class="header-area-right">
+          <div class="header-content"><p>guest</p></div>
+          <div class="header-content"><p>username</p></div>
+          <div id="loginTime" class="header-content">
+            <p>ログイン日時：{{loginTime}}</p>
+          </div>
+          <div class="header-content"><p>setting</p></div>
+        </div>
+      </div>
+      <div class="btn-list">
+        <button type="button" class="exec-btn">update</button>
+        <button type="button" class="exec-btn">delete</button>
+      </div>
+    </header>
+
+    <div class="tabs">
+      <input id="base" type="radio" name="tab_item" checked />
+      <label class="tab_item" for="base">基本情報</label>
+      <input id="sideEffect" type="radio" name="tab_item" />
+      <label class="tab_item" for="sideEffect">副作用</label>
+      <input id="medicine" type="radio" name="tab_item" />
+      <label class="tab_item" for="medicine">被疑薬</label>
+
+      <div class="tab_content" id="base_content">
+        <h1>患者の基本情報を入力してください。</h1>
+        <div>
+          <lable class="label-area">患者名</lable>
+          <input type="text" />
+        </div>
+        <div>
+          <lable class="label-area">性別</lable>
+          <select>
+            <option value=""></option>
+            <option value="1">男</option>
+            <option value="2">女</option>
+          </select>
+        </div>
+        <div>
+          <lable class="label-area">手帳</lable>
+          <select>
+            <option value=""></option>
+            <option value="sample">サンプル1</option>
+            <option value="sample">サンプル2</option>
+            <option value="sample">サンプル3</option>
+            <option value="sample">サンプル4</option>
+            <option value="sample">サンプル5</option>
+          </select>
+        </div>
+        <div>
+          <lable class="label-area">緊急連絡先</lable>
+          <input type="text" />
+        </div>
+        <div>
+          <lable class="label-area">医療機関名</lable>
+          <input type="text" />
+        </div>
+        <div>
+          <lable class="label-area">担当課</lable>
+          <input type="text" />
+        </div>
+        <div>
+          <lable class="label-area">主治医</lable>
+          <input type="text" />
+        </div>
+        <div>
+          <lable class="label-area">常備薬</lable>
+          <input type="text" />
+        </div>
+        <div>
+          <lable class="label-area">診察情報</lable>
+          <textarea type="text"></textarea>
+        </div>
+      </div>
+
+      <div class="tab_content" id="sideEffect_content">
+        <h1>副作用を入力してください。</h1>
+        <div>
+          <lable class="label-area">症状名</lable>
+          <input type="text" class="input-large" />
+        </div>
+        <div>
+          <lable class="label-area">症状詳細</lable>
+          <textarea type="text"></textarea>
+        </div>
+        <div>
+          <lable class="label-area">重篤性</lable>
+          <label><input type="radio" name="seriousness" />重篤</label>
+          <label><input type="radio" name="seriousness" />非重篤</label>
+        </div>
+        <div>
+          <lable class="label-area">発現期間</lable>
+          <input type="date" class="date" />
+          <lable>～</lable>
+          <input type="date" class="date" />
+        </div>
+        <div>
+          <lable class="label-area">転帰</lable>
+          <label><input type="checkbox" />回復</label>
+          <label><input type="checkbox" />軽快</label>
+          <label><input type="checkbox" />未回復</label>
+          <label><input type="checkbox" />死亡</label>
+          <label><input type="checkbox" />不明</label>
+          <label><input type="checkbox" />後遺症あり</label>
+        </div>
+        <div>
+          <lable class="label-area">被疑薬との因果関係</lable>
+          <label><input type="checkbox" />有</label>
+          <label><input type="checkbox" />無</label>
+          <label><input type="checkbox" />不明</label>
+        </div>
+        <div>
+          <lable class="label-area">胎児への影響</lable>
+          <label><input type="checkbox" />影響あり</label>
+          <label><input type="checkbox" />影響なし</label>
+          <label><input type="checkbox" />不明</label>
+        </div>
+      </div>
+
+      <div class="tab_content" id="medicine_content">
+        <h1>被疑薬に関する情報を入力してください。</h1>
+        <div>
+          <lable class="label-area">被疑薬</lable>
+          <input type="text" class="input-large" />
+        </div>
+        <div>
+          <lable class="label-area">製造販売業者</lable>
+          <input type="text" class="input-large" />
+        </div>
+        <div>
+          <lable class="label-area">業者への情報提供</lable>
+          <label><input type="radio" name="provideInfoToVendors" />有</label>
+          <label><input type="radio" name="provideInfoToVendors" />無</label>
+        </div>
+        <div>
+          <lable class="label-area">投与経路</lable>
+          <input type="text" />
+        </div>
+        <div>
+          <lable class="label-area">一日投与量</lable>
+          <input type="text" class="input-short" />
+          <select>
+            <option value=""></option>
+            <option value="1">mg</option>
+            <option value="2">g</option>
+          </select>
+        </div>
+        <div>
+          <lable class="label-area">投与期間</lable>
+          <input type="date" class="date" />
+          <lable>～</lable>
+          <input type="date" class="date" />
+        </div>
+        <div>
+          <lable class="label-area">使用理由</lable>
+          <textarea type="text"></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="./js/min/vue.min.js"></script>
+    <script src="./js/sample.js"></script>
   </body>
 </html>

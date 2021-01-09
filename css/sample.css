@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+html {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 0.1em;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+label {
+  margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+input {
+  border: 1px solid gray;
+  border-radius: 0.1rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+textarea {
+  border: 1px solid gray;
+  border-radius: 0.1rem;
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  height: 4rem;
+  width: 40rem;
+}
+
+select {
+  padding: 1px 30px 1px 5px;
+  margin: 0.3rem 0rem 0.3rem 0rem;
+  border-radius: 0.1rem;
+  border: 1px solid gray;
+  background-image: url(../img/pic03-14.png);
+  background-repeat: no-repeat;
+  background-size: 12px 10px;
+  background-position: right 10px center;
+}
+
+.header-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  color: floralwhite;
+  background-color: rgba(0, 0, 0, 0.637);
+}
+
+.header-area-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-area-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header-content:hover {
+  color: #fff;
+  background: rgb(73, 163, 253);
+}
+
+.exec-btn {
+  color: #fff;
+  background-color: #5ab4bd;
+}
+
+.exec-btn:hover {
+  color: #fff;
+  background: #91c9ce;
+}
+
+.btn-list {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgba(0, 0, 0, 0.281);
+}
+
+.tabs {
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+/*タブのスタイル*/
+.tab_item {
+  margin: 0 0 0 0;
+  width: calc(100% / 3);
+  height: 50px;
+  border-bottom: 3px solid #5ab4bd;
+  background-color: #d9d9d9;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+.tab_item:hover {
+  opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 20px 20px 20px 20px;
+  clear: both;
+  overflow: hidden;
+}
+
+/*選択されているタブのコンテンツのみを表示*/
+#base:checked ~ #base_content,
+#sideEffect:checked ~ #sideEffect_content,
+#medicine:checked ~ #medicine_content {
+  display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+  background-color: #5ab4bd;
+  color: #fff;
+}
+
+.label-area {
+  display: inline-block;
+  width: 10rem;
+}
+
+.input-short {
+  width: 5rem;
+}
+
+.input-large {
+  width: 20rem;
+}
+
+.date {
+  width: 10rem;
+}
