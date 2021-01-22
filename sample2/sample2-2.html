@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/destyle.css" type="text/css" />
+    <link rel="stylesheet" href="./css/sample2.css" type="text/css" />
+    <title>Sample2</title>
+  </head>
+  <body>
+    <div class="contents-area">
+      <header>
+        <p>新規サービス申し込み</p>
+      </header>
+      <div class="input-area">
+        <div>
+          <lable class="label-area">お名前</lable>
+          <input type="text" class="customer-name" placeholder="田中" />
+          <input type="text" class="customer-name" placeholder="太郎" />
+        </div>
+        <div>
+          <lable class="label-area">お名前(カナ)</lable>
+          <input type="text" class="customer-name" placeholder="タナカ" />
+          <input type="text" class="customer-name" placeholder="タロウ" />
+        </div>
+        <div>
+          <lable class="label-area">性別</lable>
+          <select>
+            <option value=""></option>
+            <option value="1">男</option>
+            <option value="2">女</option>
+          </select>
+        </div>
+        <div class="birth-date-content">
+          <lable class="label-area">生年月日</lable>
+          <input type="text" class="box-year" placeholder="2000" />
+          <p>年</p>
+          <input type="text" class="box-month" placeholder="01" />
+          <p>月</p>
+          <input type="text" class="box-day" placeholder="01" />
+          <p>日</p>
+        </div>
+        <div>
+          <lable class="label-area">郵便番号</lable>
+          <input type="text" class="box-postal-code" placeholder="1112222" />
+          <button type="button" id="searchAddress">住所を検索</button>
+        </div>
+        <div>
+          <lable class="label-area">住所(都道府県)</lable>
+          <input type="text" class="box-address-short" placeholder="東京都" />
+        </div>
+        <div>
+          <lable class="label-area">住所(市区町村)</lable>
+          <input
+            type="text"
+            class="box-address-long"
+            placeholder="港区　芝1丁目"
+          />
+        </div>
+        <div>
+          <lable class="label-area">住所(番地)</lable>
+          <input type="text" class="box-address-long" placeholder="1-2-3" />
+        </div>
+        <div>
+          <lable class="label-area">住所(建物)</lable>
+          <input
+            type="text"
+            class="box-address-long"
+            placeholder="サンプルマンション901号室"
+          />
+        </div>
+        <div>
+          <lable class="label-area">電話番号</lable>
+          <input type="text" class="box-tel" placeholder="080" />
+          <lable class="">-</lable>
+          <input type="text" class="box-tel" placeholder="1234" />
+          <lable class="">-</lable>
+          <input type="text" class="box-tel" placeholder="5678" />
+        </div>
+        <div class="btn-next-area">
+          <button
+            type="button"
+            class="button-middle"
+            onclick="location.href='./sample2-1.html'"
+          >
+            戻る
+          </button>
+          <button
+            type="button"
+            class="button-middle"
+            onclick="location.href='./sample2-3.html'"
+          >
+            次へ
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

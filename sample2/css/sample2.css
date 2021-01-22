@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+.contents-area {
+  max-width: 480px;
+  margin: 20px auto;
+  font-size: 14px;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin: 5px 5px 5px 5px;
+  border-bottom: 2px solid #000;
+}
+
+p {
+  padding: 0.2rem 0rem 0.2rem 0rem;
+  margin: 0.2rem 0rem 0.2rem 0rem;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 0.1em;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.637);
+}
+button:hover {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.295);
+}
+
+input {
+  border: 1px solid gray;
+  border-radius: 0.1rem;
+  padding: 0.2rem 0rem 0.2rem 0rem;
+  margin: 0.2rem 0rem 0.2rem 0rem;
+}
+
+select {
+  padding: 1px 30px 1px 5px;
+  margin: 0.3rem 0rem 0.3rem 0rem;
+  border-radius: 0.1rem;
+  border: 1px solid gray;
+  background-image: url(../img/pic03-14.png);
+  background-repeat: no-repeat;
+  background-size: 12px 10px;
+  background-position: right 10px center;
+}
+
+a:link {
+  color: #0000ff;
+}
+a:visited {
+  color: #000080;
+}
+a:hover {
+  color: #ff0000;
+}
+a:active {
+  color: #ff8000;
+}
+
+.new-registration {
+  text-align: center;
+}
+
+.space-area {
+  height: 2rem;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-box input {
+  width: 20rem;
+}
+
+.login-description {
+  font-size: 0.6rem;
+  overflow-wrap: normal;
+}
+
+.msg-forgot-id-or-pass {
+  font-size: 0.8rem;
+}
+
+.caution-messag {
+  font: size 0.8rem;
+  overflow-wrap: normal;
+}
+
+.main-text {
+  padding-left: 1rem;
+}
+
+.input-area {
+  padding: 10px 10px 10px 10px;
+}
+
+.input-area > div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.label-area {
+  display: inline-block;
+  /* width: 8rem; */
+  width: 30%;
+}
+
+.customer-name {
+  width: 7rem;
+}
+
+.birth-date {
+  display: flex;
+  align-items: center;
+}
+
+.birth-date-content p {
+  display: inline-block;
+}
+
+.box-year {
+  width: 4rem;
+}
+
+.box-month {
+  width: 2rem;
+}
+
+.box-day {
+  width: 2rem;
+}
+
+.box-postal-code {
+  width: 6rem;
+}
+
+#searchAddress {
+  font-size: 0.8rem;
+  padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+  margin: 0 0 0 0;
+}
+
+.box-address-short {
+  width: 8rem;
+}
+
+.box-address-long {
+  width: 15rem;
+}
+
+.box-tel {
+  width: 4rem;
+}
+
+.btn-next-area {
+  text-align: center;
+}
+
+.button-middle {
+  width: 10rem;
+}
+
+.input-info-area {
+  padding: 10px 10px 10px 10px;
+}
+
+.input-info-area > div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.input-info {
+  width: 15rem;
+}
+
+.main-area {
+  padding: 10px 10px 10px 10px;
+}
+
+.main-area > div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.upload-area {
+  display: flex;
+  justify-content: center;
+}
+
+.contents-image {
+  width: 90%;
+  height: 300px;
+  font-size: 2rem;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uploaded-image {
+  width: 90%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-authentication-code {
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid #000;
+}

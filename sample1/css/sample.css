@@ -87,7 +87,61 @@ select {
 
 .header-content:hover {
   color: #fff;
-  background: rgb(73, 163, 253);
+  background: #91c9ce;
+}
+
+ul {
+  padding: 0 0 0 0;
+}
+li {
+  list-style: none;
+}
+
+/**
+ * menu bar "setting"
+ */
+/*親メニュー*/
+nav > ul > li {
+  position: relative;
+  float: left;
+  margin-right: 45px;
+}
+nav a {
+  text-decoration: none; /*under line*/
+}
+nav ul a:hover {
+  background: #91c9ce;
+}
+nav .main-menu:hover ul,
+nav .main-menu ul.focused {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s;
+}
+nav li.main-menu li a:hover,
+nav li.main-menu li a:focus {
+  background: #91c9ce;
+}
+/*サブメニュー*/
+nav .sub-menu {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  visibility: hidden;
+}
+nav .sub-menu a {
+  width: 10rem;
+  padding: 1rem 1rem 1rem 1rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 1);
+  opacity: 1;
+  display: block;
+}
+nav .sub-menu a:hover {
+  color: #fff;
 }
 
 .exec-btn {
@@ -102,7 +156,7 @@ select {
 
 .btn-list {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
   background-color: rgba(0, 0, 0, 0.281);
 }
 
